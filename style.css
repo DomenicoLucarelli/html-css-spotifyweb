@@ -12,7 +12,7 @@
 
 
 .ext-container{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
 
     display: flex;
 
@@ -21,7 +21,7 @@
 
 .ext-container .inner-container1{
     min-height: 100%;
-    width: 260px;
+    width: 330px;
     background-color: black;
 }
 
@@ -168,32 +168,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .ext-container .inner-container2{
     height: 100%;
 
@@ -216,48 +190,98 @@
 }
 
 .ext-container .inner-container2 header .button{
-    min-width: 200px;
-    min-height: 60px;
-
-    background-color: red;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
 
 }
 
+.ext-container .inner-container2 header .button button{
+    background-color: transparent;
+    color: #c1c1c1;
+    border: 2px solid #c1c1c1;
+    border-radius: 20px;
+
+    font-size: 15px
+    font-weight: 500;
+    padding: 10px 30px;
+}
+
+.box-centered{
+    padding: 0 20px;
+}
+
+
 .ext-container .inner-container2 nav{
-    min-height: 70px;
-    max-width: 50%;
+   
     margin: 5px auto;
-    background-color: coral;
+    
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: center;
+    color: #7b7b7b;
+    padding-top: 20px;
 
 }
 
-
-.ext-container .inner-container2 nav .nav-item{
-    background-color: azure;
-    min-width: 60px;
+.inner-container2 .box-centered h2{
+    color: white;
+    font-size: 28px;
+    padding: 10px 0;
 }
 
+.inner-container2 .box-centered span{
+    color: #7b7b7b;
+    
+}
 
 
 
 .ext-container .inner-container2 .album1 , .album2 , .artists{
-    min-height: 300px;
-    background-color: brown;
+   
+    
 
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .ext-container .inner-container2 .album1 .card , .album2 .card , .artists .card{
-    background-color: chartreuse;
+    
 
-    min-width: calc(100% / 6 - 20px);
+    width: calc(100% / 6 - 20px / 6 * 5);
 
+}
+
+.artists .card .album-img img{
+    border-radius: 50%;
+}
+
+ .card .album-img img{
+    width: 100%;
+    height: auto;
+}
+    
+.card .album-description{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+ .card .album-description .title{
+    color: white;
+    font-size: 1.2em
+}
+
+.album1 .card .album-description .singer{
+    color: #7b7b7b;
 }
 
 
@@ -267,7 +291,7 @@
 
 
 footer{
-    height: 80px;
+    height: 100px;
 
     background-color: #282828;
 
@@ -275,10 +299,8 @@ footer{
 }
 
 footer .player-left{
-    height: 100%;
+    
     width: 260px;
-
-    background-color: orange;
 
     padding: 15px 10px;
 
@@ -290,36 +312,60 @@ footer .player-left .song{
     
     align-items: center;
     width: 70%;
-    height: 100%;
+    padding-top: 10px;
+    
 }
 
 footer .player-left .song .song-img{
-    width:40px ;
+    width:50px ;
     height: 100%;
-
-    background-color: grey;
 }
+
+footer .player-left .song .song-img img{
+    width: 100%;
+}
+
 
 footer .player-left .song .song-title{
-    height: 100%;
-    background-color: aqua;
-
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
 }
 
-.buttons{
-    height: 100%;
-    background-color: blue;
+footer .player-left .song .song-title span{
+    font-size: 0.8em;
+    color: #7b7b7b;
+    font-weight: 500;
+}
 
+footer .player-left .song .song-title h4{
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+.buttons{
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #7b7b7b;
+    padding-left: 10px;
+
+    font-size: 20px;
+    
 }
 
 
 footer .player-center{
     flex-grow: 1;
-    height: 100%;
+    
 
-    background-color: yellow;
+    
 }
 
 
@@ -327,33 +373,61 @@ footer .player-center .center-container{
     max-width: 60%;
     height: 100%;
     
-    background-color: green;
+    
 
      margin: 0 auto;
     }
 
 footer .player-center .center-container .player-keys{
-    background-color: red;
     height: 50%;
-    max-width: 50%;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 25px;
+    color: white;
+    padding-top: 10px;
 }
 
-footer .player-center .center-container .timebar{
-    height: 40%;
-    background-color: orange;
-    
-    max-width: 70%;
-    margin: 5px auto;
+ .fa-circle-play{
+    font-size: 1.4em;
 }
+
+
+
+footer .player-center .center-container .timebar{
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.timebar .sing-minutes{
+    color: #c1c1c1;
+}
+
+footer .player-center .center-container .timebar .song-bar{
+    height: 4px;
+    flex-grow: 1;
+    background-color: #7b7b7b;
+}
+
+footer .player-center .center-container .timebar .song-bar .inner-song-bar{
+    background-color: #c1c1c1;
+    width: 40%;
+    height: 100%;
+}
+
 
 
 
 footer .player-right{
-    height: 100%;
+    
     width: 260px;
+    padding-right: 10px;
 
-    background-color: orange;
+    
 
     display: flex;
 
@@ -361,16 +435,33 @@ footer .player-right{
 }
 
 footer .player-right .icons{
-    height: 100%;
-    width: 45%;
-    background-color: red;
-
+    width: 100%;
+    
     display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 15px;
+    color: #c1c1c1;
+    padding-left: 5px;
 }
 
 
 footer .player-right .bar{
     height: 100%;
     width: 65%;
-    background-color: blue;
+
+    flex-grow: 1;
+
+    height: 4px;
+    flex-grow: 1;
+    background-color: #7b7b7b;
+
+    padding-right: 5px;
+    
+}
+
+footer .player-right .bar .bar-inner{
+    background-color: #c1c1c1;
+    width: 20%;
+    height: 100%;
 }
