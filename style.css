@@ -21,7 +21,7 @@
 
 .ext-container .inner-container1{
     min-height: 100%;
-    width: 330px;
+    min-width: 260px;
     background-color: black;
 }
 
@@ -143,6 +143,7 @@
 .down .profile{
     display: flex;
     margin-top: 10px;
+    align-items: center;
 
 }
 
@@ -464,4 +465,18 @@ footer .player-right .bar .bar-inner{
     background-color: #c1c1c1;
     width: 20%;
     height: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .ext-container .inner-container2 .album1 .card, .album2 .card, .artists .card{
+        width: calc(100% / 4 - 20px / 6 * 5);
+        margin-bottom: 40px;
+    } 
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px){
+    .ext-container .inner-container2 .album1 .card, .album2 .card, .artists .card{
+        width: calc(100% / 2 - 20px / 6 * 5);
+        margin-bottom: 40px;
+    } 
 }
