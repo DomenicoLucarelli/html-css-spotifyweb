@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+ .container-centered{
+    margin: 0 20px 0 20px;
+}
+
+
+.ext-container{
+    height: calc(100vh - 80px);
+
+    display: flex;
+
+    
+}
+
+.ext-container .inner-container1{
+    min-height: 100%;
+    width: 260px;
+    background-color: black;
+}
+
+.ext-container .inner-container1 .container-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+    
+
+     
+
+    
+
+.ext-container .inner-container1 .logo{
+    min-height: 70px;
+    
+    background-color: yellowgreen;
+
+    margin-bottom: 20px;
+    
+}
+
+.ext-container .inner-container1 .left-menu{
+    margin-bottom: 20px;
+
+    background-color: aqua;
+    
+   
+    
+   
+}
+
+.ext-container .inner-container1 .left-menu .menu-item{
+    min-height: 40px;
+
+    background-color: yellowgreen;
+
+    margin-bottom: 10px;
+}
+
+.ext-container .inner-container1 .playlist{
+    min-height: 100px;
+    background-color: aqua;
+}
+
+
+.ext-container .inner-container1 .playlist .title{
+    min-height: 30px;
+
+    background-color: yellowgreen;
+
+    margin-bottom: 20px;
+}
+
+.ext-container .inner-container1 .playlist .new-playlist{
+    display: flex;
+
+    margin-bottom: 20px;
+}
+
+.ext-container .inner-container1 .playlist .new-playlist .square{
+    width: 50px;
+    min-height: 50px;
+
+    background-color: grey;
+}
+
+.ext-container .inner-container1 .playlist .new-playlist .square-text{
+    min-height: 50px;
+
+    background-color: red;
+
+    flex-grow: 1;
+}
+
+.ext-container .inner-container1 .playlist .playlist-items{
+    min-height: 200px;
+
+    background-color: aqua;
+}
+
+.ext-container .inner-container1 .playlist .playlist-items .item-text{
+    min-height: 20px;
+
+    background-color: yellowgreen;
+
+    margin-bottom: 10px;
+}
+
+.down .install{
+    min-height: 20px;
+    background-color: yellowgreen;
+    margin-bottom: 10px;
+}
+
+.down .profile{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+
+.down .profile .img-profile{
+    min-height: 30px;
+    width: 30%;
+    background-color: yellowgreen;
+
+}
+
+.down .profile .user{
+    flex-grow: 1;
+    min-height: 30px;
+    background-color: red;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ext-container .inner-container2{
+    height: 100%;
+
+    background-color: #141922;
+
+    flex-grow: 1;
+
+    overflow: auto;
+}
+
+.ext-container .inner-container2 header{
+    height: 80px;
+
+    background-color: #080b12;
+
+    display: flex;
+    justify-content: flex-end;
+
+    padding-right: 20px;
+}
+
+.ext-container .inner-container2 header .button{
+    min-width: 200px;
+    min-height: 60px;
+
+    background-color: red;
+
+}
+
+.ext-container .inner-container2 nav{
+    min-height: 70px;
+    max-width: 50%;
+    margin: 5px auto;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+
+.ext-container .inner-container2 nav .nav-item{
+    background-color: azure;
+    min-width: 60px;
+}
+
+
+
+
+.ext-container .inner-container2 .album1 , .album2 , .artists{
+    min-height: 300px;
+    background-color: brown;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ext-container .inner-container2 .album1 .card , .album2 .card , .artists .card{
+    background-color: chartreuse;
+
+    min-width: calc(100% / 6 - 20px);
+
+}
+
+
+
+
+
+
+
+footer{
+    height: 80px;
+
+    background-color: #282828;
+
+    display: flex;
+}
+
+footer .player-left{
+    height: 100%;
+    width: 260px;
+
+    background-color: orange;
+
+    padding: 15px 10px;
+
+    display: flex;
+}
+
+footer .player-left .song{
+    display: flex;
+    
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+footer .player-left .song .song-img{
+    width:40px ;
+    height: 100%;
+
+    background-color: grey;
+}
+
+footer .player-left .song .song-title{
+    height: 100%;
+    background-color: aqua;
+
+    flex-grow: 1;
+}
+
+.buttons{
+    height: 100%;
+    background-color: blue;
+
+    flex-grow: 1;
+}
+
+
+footer .player-center{
+    flex-grow: 1;
+    height: 100%;
+
+    background-color: yellow;
+}
+
+
+footer .player-center .center-container{
+    max-width: 60%;
+    height: 100%;
+    
+    background-color: green;
+
+     margin: 0 auto;
+    }
+
+footer .player-center .center-container .player-keys{
+    background-color: red;
+    height: 50%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+footer .player-center .center-container .timebar{
+    height: 40%;
+    background-color: orange;
+    
+    max-width: 70%;
+    margin: 5px auto;
+}
+
+
+
+footer .player-right{
+    height: 100%;
+    width: 260px;
+
+    background-color: orange;
+
+    display: flex;
+
+   
+}
+
+footer .player-right .icons{
+    height: 100%;
+    width: 45%;
+    background-color: red;
+
+    display: flex;
+}
+
+
+footer .player-right .bar{
+    height: 100%;
+    width: 65%;
+    background-color: blue;
+}
