@@ -50,6 +50,10 @@
     width: 70%;
 }
 
+.ext-container .inner-container1 .logo img:nth-child(2){
+    display: none;
+}
+
 
 .ext-container .inner-container1 .left-menu{
     margin-bottom: 20px;
@@ -297,6 +301,7 @@ footer{
     background-color: #282828;
 
     display: flex;
+    justify-content: space-between;
 }
 
 footer .player-left{
@@ -363,7 +368,7 @@ footer .player-left .song .song-title h4{
 
 
 footer .player-center{
-    flex-grow: 1;
+    
     
 
     
@@ -371,12 +376,13 @@ footer .player-center{
 
 
 footer .player-center .center-container{
-    max-width: 60%;
+    
     height: 100%;
+    min-width: 450px;
     
     
 
-     margin: 0 auto;
+     
     }
 
 footer .player-center .center-container .player-keys{
@@ -472,6 +478,10 @@ footer .player-right .bar .bar-inner{
         width: calc(100% / 4 - 20px / 6 * 5);
         margin-bottom: 40px;
     } 
+
+    footer .player-center .center-container{
+        min-width: auto;
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px){
@@ -479,4 +489,81 @@ footer .player-right .bar .bar-inner{
         width: calc(100% / 2 - 20px / 6 * 5);
         margin-bottom: 40px;
     } 
+
+    footer .player-center .center-container{
+        min-width: auto;
+    }
+
+    .buttons{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .player-left .song .song-img{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .ext-container .inner-container1 .logo img{
+        display: none;
+
+    }
+    
+    .ext-container .inner-container1 .logo img:nth-child(2){
+        display: block;
+        width: 30px;
+    }
+
+    .ext-container .inner-container2 .album1 .card, .album2 .card, .artists .card{
+        width: calc(100% / 2 - 20px / 6 * 5);
+        margin-bottom: 40px;
+    } 
+
+    footer .player-center .center-container{
+        min-width: auto;
+    }
+
+    .buttons{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ext-container .inner-container1 .left-menu .menu-item span{
+        display: none;
+    }
+
+    .ext-container .inner-container1 .playlist{
+        display: none;
+    }
+
+    .down .install span{
+        display: none;
+    }
+
+    .down hr{
+        display: none;
+
+    }
+
+    .down .profile .user{
+        display: none;
+
+    }
+
+    .down .profile{
+        margin-left: -3px;
+        margin-bottom: 5px;
+    }
+
+    .ext-container .inner-container1{
+        min-width: auto;
+    }
+
+    footer .player-left .song .song-img{
+        height: auto;
+    }
+    footer .player-center .center-container .player-keys{
+        gap: 15px;
+    }
 }
