@@ -180,7 +180,7 @@
 
     flex-grow: 1;
 
-    overflow: auto;
+    overflow: hidden;
 }
 
 .ext-container .inner-container2 header{
@@ -215,6 +215,9 @@
 
 .box-centered{
     padding: 0 20px;
+
+    overflow: auto;
+    height: 100%;
 }
 
 
@@ -302,6 +305,12 @@ footer{
 
     display: flex;
     justify-content: space-between;
+
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
 }
 
 footer .player-left{
