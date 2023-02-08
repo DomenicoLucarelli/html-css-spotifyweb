@@ -200,7 +200,7 @@
 
     flex-grow: 1;
 
-    overflow: hidden;
+    overflow: auto;
 }
 
 .ext-container .inner-container2 header{
@@ -245,7 +245,7 @@
 .box-centered{
     padding: 0 20px;
 
-    overflow: auto;
+    
     height: 100%;
 }
 
