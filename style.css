@@ -211,6 +211,15 @@
     font-size: 15px
     font-weight: 500;
     padding: 10px 30px;
+
+    transition: transform 0.2s;
+
+    
+}
+
+.ext-container .inner-container2 header .button button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .box-centered{
@@ -234,6 +243,30 @@
     padding-top: 20px;
 
 }
+.ext-container .inner-container2 nav .nav-item:hover span{
+    color: white;
+    cursor: pointer;
+}
+
+.ext-container .inner-container2 nav .nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+}
+
+.nav-item ~ .nav-item .active{
+    background-color: transparent;
+}
+
+.active{
+    height: 4px;
+    width: 45%;
+    background-color: green;
+    border-radius: 2px;
+}
+
 
 .inner-container2 .box-centered h2{
     color: white;
@@ -245,6 +278,35 @@
     color: #7b7b7b;
     
 }
+
+.card .album-img{
+    position: relative;
+    cursor: pointer;
+
+}
+
+.card .album-img .fa-circle-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-size: 4em;
+    display: none;
+  }
+
+.card .album-img:hover img{
+    filter: opacity(0.7);
+}
+
+.card .album-img:hover .fa-circle-play{
+    display: block;
+    
+}
+
+
+
+
 
 
 
