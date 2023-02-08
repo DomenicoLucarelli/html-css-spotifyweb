@@ -320,6 +320,8 @@ footer .player-left{
     padding: 15px 10px;
 
     display: flex;
+
+    max-width: 260px;
 }
 
 footer .player-left .song{
