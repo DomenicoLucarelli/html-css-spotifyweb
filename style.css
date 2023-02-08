@@ -283,7 +283,7 @@
 .active{
     height: 4px;
     width: 45%;
-    background-color: green;
+    background-color: #a6ec31;
     border-radius: 2px;
 }
 
@@ -439,11 +439,18 @@ footer .player-left .song .song-title span{
     font-weight: 500;
 }
 
+footer .player-left .song .song-title span:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
 footer .player-left .song .song-title h4{
     color: white;
     font-weight: bold;
     font-size: 17px;
 }
+
 
 
 .buttons{
@@ -459,13 +466,13 @@ footer .player-left .song .song-title h4{
     
 }
 
-
-footer .player-center{
-    
-    
-
-    
+.buttons i:hover{
+    color: white;
+    cursor: pointer;
 }
+
+
+
 
 
 footer .player-center .center-container{
@@ -491,6 +498,13 @@ footer .player-center .center-container .player-keys{
 
  .fa-circle-play{
     font-size: 1.4em;
+
+    transition: transform 0.5;
+}
+
+.fa-circle-play:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 
@@ -507,16 +521,40 @@ footer .player-center .center-container .timebar{
     color: #c1c1c1;
 }
 
+
+
 footer .player-center .center-container .timebar .song-bar{
     height: 4px;
     flex-grow: 1;
     background-color: #7b7b7b;
+
+    cursor: pointer;
+
+    border-radius: 2px;
+
+}
+
+footer .player-center .center-container .timebar .song-bar:hover .inner-song-bar{
+    background-color: #a6ec31;
 }
 
 footer .player-center .center-container .timebar .song-bar .inner-song-bar{
     background-color: #c1c1c1;
     width: 40%;
     height: 100%;
+    position: relative;
+
+    border-radius: 2px;
+}
+
+footer .player-center .center-container .timebar .song-bar .inner-song-bar .circle{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    border-radius: 50%;
 }
 
 
@@ -557,6 +595,8 @@ footer .player-right .bar{
     background-color: #7b7b7b;
 
     padding-right: 5px;
+
+    cursor: pointer;
     
 }
 
@@ -564,7 +604,27 @@ footer .player-right .bar .bar-inner{
     background-color: #c1c1c1;
     width: 20%;
     height: 100%;
+    position: relative;
+
 }
+
+.bar .bar-inner .circle{
+    height: 10px;
+width: 10px;
+background-color: white;
+position: absolute;
+right: -2px;
+top: -3px;
+border-radius: 50%;
+
+}
+
+footer .player-right .bar:hover .bar-inner{
+
+    background-color: #a6ec31;
+}
+
+
 
 @media screen and (min-width: 768px) and (max-width: 991px){
     .ext-container .inner-container2 .album1 .card, .album2 .card, .artists .card{
