@@ -397,13 +397,10 @@ footer{
 
 footer .player-left{
     
-    width: 260px;
-
-    padding: 15px 10px;
-
+   padding: 15px 10px;
     display: flex;
-
     max-width: 260px;
+    width: 100%;
 }
 
 footer .player-left .song{
@@ -471,14 +468,26 @@ footer .player-left .song .song-title h4{
     cursor: pointer;
 }
 
-
+footer .player-center{
+    height: 100%;
+    min-width: 450px;
+    min-width: 200px;
+    max-width: 530px;
+    width: 100%;
+}
 
 
 
 footer .player-center .center-container{
     
     height: 100%;
-    min-width: 450px;
+    
+    min-width: 200px;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
     
     
 
@@ -490,7 +499,7 @@ footer .player-center .center-container .player-keys{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     font-size: 25px;
     color: white;
     padding-top: 10px;
@@ -510,11 +519,10 @@ footer .player-center .center-container .player-keys{
 
 
 footer .player-center .center-container .timebar{
-    margin: 5px auto;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 15px;
+    flex-grow: 1;
+    display: flex;
 }
 
 .timebar .sing-minutes{
@@ -545,6 +553,18 @@ footer .player-center .center-container .timebar .song-bar .inner-song-bar{
     position: relative;
 
     border-radius: 2px;
+
+    animation: trasla 60s;
+}
+
+@keyframes trasla{
+    from{
+        width: 40%;
+    }
+
+    to{
+        width: 100%;
+    }
 }
 
 footer .player-center .center-container .timebar .song-bar .inner-song-bar .circle{
@@ -562,10 +582,10 @@ footer .player-center .center-container .timebar .song-bar .inner-song-bar .circ
 
 footer .player-right{
     
-    width: 260px;
+    width: 100%;
     padding-right: 10px;
 
-    
+    max-width: 260px;
 
     display: flex;
 
@@ -586,7 +606,7 @@ footer .player-right .icons{
 
 footer .player-right .bar{
     height: 100%;
-    width: 65%;
+    width: 100px;
 
     flex-grow: 1;
 
@@ -606,7 +626,15 @@ footer .player-right .bar .bar-inner{
     height: 100%;
     position: relative;
 
+    transition: width 2s;
+
 }
+
+footer .player-right .bar:active .bar-inner{
+    width: 80%;
+}
+
+
 
 .bar .bar-inner .circle{
     height: 10px;
