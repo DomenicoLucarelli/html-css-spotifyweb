@@ -66,6 +66,21 @@
     margin-bottom: 15px;
 }
 
+.ext-container .inner-container1 .left-menu .menu-item span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.ext-container .inner-container1 .playlist .new-playlist span:hover , .playlist-items span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.ext-container .inner-container1 .playlist .new-playlist .square:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
 .ext-container .inner-container1 .left-menu .menu-item i{
     font-size: 1.3em;
     
@@ -139,6 +154,11 @@
 .down .install span{
     font-weight: 500;
     padding-left: 15px;
+}
+
+.down .install span:hover{
+    color:white;
+    cursor:pointer
 }
 
 .down hr{
