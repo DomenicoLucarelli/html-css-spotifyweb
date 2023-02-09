@@ -554,7 +554,7 @@ footer .player-center .center-container .timebar .song-bar .inner-song-bar{
 
     border-radius: 2px;
 
-    animation: trasla 60s;
+    animation: trasla 60s infinite;
 }
 
 @keyframes trasla{
