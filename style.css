@@ -212,6 +212,12 @@
     justify-content: flex-end;
 
     padding-right: 20px;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: calc(100% - 260px);
+    z-index: 1;
 }
 
 .ext-container .inner-container2 header .button{
@@ -244,6 +250,8 @@
 
 .box-centered{
     padding: 0 20px;
+
+    padding-top: 80px;
 
     
     height: 100%;
@@ -740,6 +748,11 @@ footer .player-right .bar:hover .bar-inner{
     .ext-container .inner-container1{
         min-width: auto;
     }
+
+.ext-container .inner-container2 header{
+    width: calc(100% - 70px);
+
+}
 
     footer .player-left .song .song-img{
         height: auto;
