@@ -60,10 +60,26 @@
 
 }
 
+.ext-container .inner-container1 .left-menu .menu-item.menu-active::before{
+    content: "";
+
+    position: absolute;
+    left: -17px;
+
+    height: 27px;
+    width: 3px;
+
+    background-color: #a6ec31;
+
+    
+}
+
 .ext-container .inner-container1 .left-menu .menu-item{
     font-size: 1.2em;
     color: #7b7b7b;
     margin-bottom: 15px;
+    position: relative;
+    
 }
 
 .ext-container .inner-container1 .left-menu .menu-item span:hover{
